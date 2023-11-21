@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const MainItem = (props) =>{
-    let { title, description, imageUrl, newsUrl, source, date } = props;
+export default class MainItem extends Component {
+  render() {
+    let { title, description, imageUrl, newsUrl, source, date } = this.props;
     return (
       <div className="my-3">
         <div className="card" >
@@ -22,6 +23,5 @@ const MainItem = (props) =>{
         </div>
       </div>
     )
-  
+  }
 }
-export default  MainItem;

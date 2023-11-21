@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+export default class NavBar extends Component {
   //   static propTypes = {second: third}
 
+  render() {
     return (
       <div>
         <nav
-          className="navbar fixed-top navbar-expand-lg bg-body-tertiary"
+          className="navbar navbar-expand-lg bg-body-tertiary"
           data-bs-theme="dark"
         >
           <div className="container-fluid">
@@ -30,22 +31,46 @@ const NavBar = () => {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                <li className="nav-item">
+                  <Link className="nav-link active" aria-current="page" to="/">
+                    Home
+                  </Link>
                 </li>
 
-                <li className="nav-item active"><Link className="nav-link" aria-current="page" to="/business">
-                  Business</Link>
+                <li className="nav-item active">
+                  <Link className="nav-link" aria-current="page" to="/business">
+                    Business
+                  </Link>
                 </li>
-                <li className="nav-item active"><Link className="nav-link" aria-current="page" to="/entertainment">Entertainment</Link>
+                <li className="nav-item active">
+                  <Link className="nav-link" aria-current="page" to="/entertainment">
+                    Entertainment
+                  </Link>
                 </li>
-                <li className="nav-item active"><Link className="nav-link" aria-current="page" to="/general">General</Link>
+                <li className="nav-item active">
+                  <Link className="nav-link" aria-current="page" to="/general">
+                    General
+                  </Link>
                 </li>
-                <li className="nav-item active"><Link className="nav-link" aria-current="page" to="/health">Health</Link></li>
-                <li className="nav-item active"><Link className="nav-link" aria-current="page" to="/science">Science</Link>
+                <li className="nav-item active">
+                  <Link className="nav-link" aria-current="page" to="/health">
+                    Health
+                  </Link>
                 </li>
-                <li className="nav-item active"><Link className="nav-link" aria-current="page" to="/sports">Sports</Link>
+                <li className="nav-item active">
+                  <Link className="nav-link" aria-current="page" to="/science">
+                    Science
+                  </Link>
                 </li>
-                <li className="nav-item active"><Link className="nav-link" aria-current="page" to="/technology">Technology</Link>
+                <li className="nav-item active">
+                  <Link className="nav-link" aria-current="page" to="/sports">
+                    Sports
+                  </Link>
+                </li>
+                <li className="nav-item active">
+                  <Link className="nav-link" aria-current="page" to="/technology">
+                    Technology
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -53,7 +78,5 @@ const NavBar = () => {
         </nav>
       </div>
     );
-
+  }
 }
-
-export default  NavBar;
