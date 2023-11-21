@@ -27,7 +27,7 @@ const Main = (props) => {
     setloading(false);
     settotalResult(parsedData.totalResults);
   }
-
+// run without if dependency
     useEffect(() => {
       document.title = `NewsMonkey = ${stringUppercase(props.category)}`;
         updatePage(null);
